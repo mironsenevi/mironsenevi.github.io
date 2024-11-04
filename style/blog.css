@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+}
+
+.article-container {
+    width: calc(100% - 180px);
+    justify-content: center;
+    position: relative;
+}
+
+.article {
+    width: 100%;
+    background-color: black;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.article:last-child {
+    margin-top: 20px;
+}
+
+.logo-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-container {
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+}
+
+.image-container {
+    width: 400px; /* Adjusts on smaller screens */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border-radius: 30px;
+    overflow: hidden;
+    border: 3px solid var(--theme-color);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description-container {
+    width: calc(100% - 400px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.description {
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+}
+
+.topic {
+    margin: 0 0 20px 0;
+}
+
+.topic p {
+    font-size: 30px;
+    color: white;
+}
+
+.paragraph p {
+    color: white;
+}
+
+.paragraph a {
+    color: var(--theme-color);
+}
+
+.astronomy-logo-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.astronomy-logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .article-container {
+        width: calc(100% - 60px); /* Adjusts width for medium screens */
+    }
+    .image-container {
+        width: 100%; /* Takes full of the space */
+    }
+    .description-container {
+        width: 100%; /* Takes full of the space */
+        display: flex;
+        justify-content: center;
+    }
+    .topic p {
+        font-size: 24px; /* Adjusts font size for medium screens */
+    }
+    .content-container{
+        display: inline-block;
+    }
+    
+    
+}
+
+

@@ -1,0 +1,127 @@
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+    background-color: black;
+}
+
+:root {
+    --nav-text-color: rgb(221, 219, 219);
+    --nav-background-color: #000000;
+    --theme-color: #ff004f;
+}
+
+/* Body container styles */
+.body-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Head section styles */
+.head {
+    width: calc(100% - 180px);
+    height: 600px;
+    position: relative;
+    display: flex;
+}
+
+/* Background container styles */
+.background-container {
+    width: 600px;
+    height: 100%;
+}
+
+.background {
+    width: 100%;
+    height: calc(100% - 20px);
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content container styles */
+.content-container {
+    width: calc(100% - 600px);
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content span {
+    color: var(--theme-color);
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 2;
+    margin-top: 30px;
+}
+
+.content h1 {
+    font-size: 50px;
+}
+
+/* Responsive styles */
+@media (max-width: 1340px) {
+    .head {
+        flex-direction: column; /* Stack background and content vertically */
+        height: auto; /* Allow dynamic height */
+    }
+
+    .background-container {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Allow dynamic height */
+        display: flex;
+        justify-content: center;
+    }
+
+    .background{
+        height: auto;
+        width: 50%;
+    }
+
+    .content-container {
+        width: 100%; /* Full width for content */
+        height: auto; /* Allow dynamic height */
+        padding: 1rem; /* Add some padding */
+        justify-content: flex-start; /* Align content to start */
+    }
+
+    .content h1 {
+        font-size: 35px; /* Adjust heading size */
+    }
+
+    .content p {
+        font-size: 18px; /* Adjust paragraph size */
+    }
+}
+
+/* Extra small screens adjustments */
+@media (max-width: 768px) {
+    .head {
+        padding: 1rem; /* Add padding for small devices */
+    }
+
+    .content h1 {
+        font-size: 28px; /* Further adjust heading size */
+    }
+
+    .content p {
+        font-size: 16px; /* Further adjust paragraph size */
+    }
+
+    .background img {
+        height: 200px; /* Limit height for very small screens */
+        object-fit: contain;
+    }
+    .head{
+        width: 100%;
+    }
+    
+}
